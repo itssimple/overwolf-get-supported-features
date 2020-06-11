@@ -10,6 +10,6 @@ Load the library either by importing it or loading it before the code that needs
 /* Don't register listeners like this.. */
 overwolf.games.onGameLaunched.addListener((info) => {
     let supportedFeatures = overwolf.games.getSupportedFeatures(info.classId);
-    console.log(supportedFeatures); // Array of features, or null (if game is not supported)
+    console.log(supportedFeatures); // { game: "APEX", events: [ ... all the events ] }
 });
 ```
