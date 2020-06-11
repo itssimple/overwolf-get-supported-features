@@ -55,7 +55,7 @@ const OverwolfGameSupportedEvents = {
     Splitgate: ['gep_internal', 'game_info', 'match_info', 'player', 'location', 'match', 'feed', 'connection', 'kill', 'death', 'portal', 'assist'],
     StarCraft2: ['gep_internal', 'match_info'],
     TeamfightTactics: ['gep_internal', 'live_client_data', 'me', 'match_info', 'roster', 'store', 'board', 'bench', 'carousel'],
-    Valorant: ['gep_internal', 'me', 'game_info', 'match_info', 'kill', 'death'],
+    Valorant: ['gep_internal', 'me', 'game_info', 'match_info', 'kill', 'death', 'round_report', 'headshot', 'headshots'],
     WorldOfTanks: ['gep_internal', 'kill', 'death', 'game_info', 'match_info'],
     WorldOfWarcraft: ['game_info'],
     WorldOfWarships: ['gep_internal', 'game_info', 'account_info', 'match', 'match_info', 'kill', 'death']
