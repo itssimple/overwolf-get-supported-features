@@ -1,6 +1,7 @@
 'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
+if (typeof exports !== 'undefined') {
+    Object.defineProperty(exports, '__esModule', { value: true });
+}
 
 /**
  * An enum that contains all games that support events through Overwolf
@@ -60,9 +61,6 @@ const OverwolfGameSupportedEvents = {
     WorldOfWarships: ['gep_internal', 'game_info', 'account_info', 'match', 'match_info', 'kill', 'death']
 };
 
-overwolf = overwolf ?? { games: {} };
-overwolf.games = overwolf.games ?? {};
-
 /**
  * Gets the supported events for the specified classId
  * @param {Number} classId This is the classId you get from the gameInfo-object
@@ -77,6 +75,10 @@ function getSupportedFeatures (classId) {
     return null;
 }
 
-overwolf.games.getSupportedFeatures = getSupportedFeatures;
+if (typeof overwolf !== 'undefined' && typeof overwolf.games !== 'undefined') {
+    overwolf.games.getSupportedFeatures = getSupportedFeatures;
+}
 
-exports.getSupportedFeatures = getSupportedFeatures;
+if (typeof exports !== 'undefined') {
+    exports.getSupportedFeatures = getSupportedFeatures;
+}
