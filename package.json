@@ -1,0 +1,14 @@
+{
+  "name": "overwolf-games-features",
+  "version": "1.0.0",
+  "description": "Enables the user to get supported features without going to the documentation.",
+  "homepage": "https://github.com/itssimple/overwolf-get-supported-features",
+  "bugs": {
+    "url": "https://github.com/itssimple/overwolf-get-supported-features/issues"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/itssimple/overwolf-get-supported-features.git",
+  "author": "NoLifeKing85 <itssimple@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false
+}
