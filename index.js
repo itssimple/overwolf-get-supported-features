@@ -62,14 +62,20 @@ const OverwolfGameSupportedEvents = {
 };
 
 /**
+ * @typedef {Object} OverwolfGameWithEvents
+ * @property {string} game
+ * @property {string[]} events
+ */
+
+/**
  * Gets the supported events for the specified classId
  * @param {Number} classId This is the classId you get from the gameInfo-object
- * @returns {string[]} Returns an array of supported events if there's a game that corresponds to the classId, otherwise null
+ * @returns {game: string, events: string[]} Returns an array of supported events if there's a game that corresponds to the classId, otherwise null
  */
 function getSupportedFeatures (classId) {
     let game = Object.keys(OverwolfGameWithEventSupport).find(key => OverwolfGameWithEventSupport[key] == classId);
     if (game) {
-        return OverwolfGameSupportedEvents[game];
+        return { game: game, events: OverwolfGameSupportedEvents[game] };
     }
 
     return null;
