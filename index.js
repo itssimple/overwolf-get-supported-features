@@ -18,6 +18,7 @@ const OverwolfGameWithEventSupport = {
     LeagueOfLegends: 5426,
     LegendsOfRuneterra: 21620,
     MTGArena: 21308,
+    Overwatch: 10844,
     PUBG: 10906,
     PUBGLite: 21598,
     PathOfExile: 7212,
@@ -221,6 +222,13 @@ const OverwolfGameSupportedEvents = {
         'gep_internal',
         'game_info',
         'match_info'
+    ],
+    Overwatch: [
+      'gep_internal',
+      'game_info',
+      'match_info',
+      'kill',
+      'death'
     ],
     PUBG: [
         /**

@@ -12,4 +12,7 @@ overwolf.games.onGameLaunched.addListener((info) => {
     let supportedFeatures = overwolf.games.getSupportedFeatures(info.classId);
     console.log(supportedFeatures); // { game: "APEX", events: [ ... all the events ] }
 });
+
+/* You can also fetch the supported features like this */
+let supportedFeatures = overwolf.games.getSupportedFeatures(OverwolfGameWithEventSupport.Overwatch);
 ```

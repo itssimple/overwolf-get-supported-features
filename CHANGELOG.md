@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.0
+
+- feat: Added support for [Overwatch](https://overwolf.github.io/docs/api/overwolf-games-events-overwatch)
+
 ## 1.2.0
 
 - feat: Added the new events (possibly features) for Valorant
