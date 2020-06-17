@@ -263,7 +263,8 @@ const OverwolfGameSupportedEvents = {
         'me',
         'phase',
         'map',
-        'team_feed'
+        'team_feed',
+        'team'
     ],
     PathOfExile: [
         /**
@@ -348,10 +349,7 @@ const OverwolfGameSupportedEvents = {
         'game_info',
         'match_info',
         'kill',
-        'death',
-        'round_report',
-        'headshot',
-        'headshots'
+        'death'
     ],
     WorldOfTanks: [
         /**

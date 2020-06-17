@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.0
+
+- feat(PUBG Lite): Added `team`-feature
+- fix(Valorant): Fixed supported features
+
 ## 1.3.0
 
 - feat: Added support for [Overwatch](https://overwolf.github.io/docs/api/overwolf-games-events-overwatch)
