@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.0
+
+- feat(Fortnite): Added `killer`-feature
+
 ## 1.4.0
 
 - feat(PUBG Lite): Added `team`-feature

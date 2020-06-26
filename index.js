@@ -153,6 +153,7 @@ const OverwolfGameSupportedEvents = {
         'gep_internal',
         'kill',
         'killed',
+        'killer',
         'revived',
         'death',
         'match',
