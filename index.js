@@ -1,12 +1,10 @@
 'use strict';
-if (typeof exports !== 'undefined') {
-    Object.defineProperty(exports, '__esModule', { value: true });
-}
-
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getSupportedFeaturesOnline = exports.getSupportedFeatures = exports.OverwolfGameSupportedEvents = exports.OverwolfGameWithEventSupport = void 0;
 /**
  * An enum that contains all games that support events through Overwolf
  */
-const OverwolfGameWithEventSupport = {
+exports.OverwolfGameWithEventSupport = {
     APEX: 21566,
     CSGO: 7764,
     DOTA2: 7314,
@@ -32,11 +30,10 @@ const OverwolfGameWithEventSupport = {
     WorldOfWarcraft: 765,
     WorldOfWarships: 10746
 };
-
 /**
  * Enum that contains the supported events per game, these will automatically register with setRequiredFeatures when the game is detected
  */
-const OverwolfGameSupportedEvents = {
+exports.OverwolfGameSupportedEvents = {
     APEX: [
         /**
          * Internal use for Overwolf (Version numbers for GEP, Game Event Provider)
@@ -225,11 +222,11 @@ const OverwolfGameSupportedEvents = {
         'match_info'
     ],
     Overwatch: [
-      'gep_internal',
-      'game_info',
-      'match_info',
-      'kill',
-      'death'
+        'gep_internal',
+        'game_info',
+        'match_info',
+        'kill',
+        'death'
     ],
     PUBG: [
         /**
@@ -378,31 +375,52 @@ const OverwolfGameSupportedEvents = {
         'death'
     ]
 };
-
 /**
  * @typedef {Object} OverwolfGameWithEvents
  * @property {string} game
  * @property {string[]} events
  */
-
 /**
  * Gets the supported events for the specified classId
  * @param {Number} classId This is the classId you get from the gameInfo-object
  * @returns {OverwolfGameWithEvents} Returns an array of supported events if there's a game that corresponds to the classId, otherwise null
  */
-function getSupportedFeatures (classId) {
-    let game = Object.keys(OverwolfGameWithEventSupport).find(key => OverwolfGameWithEventSupport[key] == classId);
+function getSupportedFeatures(classId) {
+    let game = Object.keys(exports.OverwolfGameWithEventSupport).find(key => exports.OverwolfGameWithEventSupport[key] == classId);
     if (game) {
-        return { game: game, events: OverwolfGameSupportedEvents[game] };
+        return {
+            game: game,
+            events: exports.OverwolfGameSupportedEvents[game]
+        };
     }
-
     return null;
 }
-
+exports.getSupportedFeatures = getSupportedFeatures;
+/**
+ * Gets the supported events for the specified classId
+ * @param {Number} classId This is the classId you get from the gameInfo-object
+ * @param {Function|null} callback This is what you use to manage the data returned
+ */
+function getSupportedFeaturesOnline(classId, callback) {
+    let game = Object.keys(exports.OverwolfGameWithEventSupport).find(key => exports.OverwolfGameWithEventSupport[key] == classId);
+    if (game) {
+        fetch(`https://game-events-status.overwolf.com/${classId}_prod.json`)
+            .then(resp => {
+            return resp.json();
+        })
+            .then(json => {
+            if (!!callback) {
+                callback({
+                    game: game,
+                    events: json.features.map(f => f.name)
+                });
+            }
+        })
+            .catch(err => console.log(err));
+    }
+}
+exports.getSupportedFeaturesOnline = getSupportedFeaturesOnline;
 if (typeof overwolf !== 'undefined' && typeof overwolf.games !== 'undefined') {
     overwolf.games.getSupportedFeatures = getSupportedFeatures;
-}
-
-if (typeof exports !== 'undefined') {
-    exports.getSupportedFeatures = getSupportedFeatures;
+    overwolf.games.getSupportedFeaturesOnline = getSupportedFeaturesOnline;
 }
