@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.6.0
+
+- feat: Added the method `getSupportedFeaturesOnline`, that fetches the available features from Overwolf-servers (uses callback)
+
 ## 1.5.0
 
 - feat(Fortnite): Added `killer`-feature
