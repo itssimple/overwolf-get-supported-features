@@ -15,4 +15,10 @@ overwolf.games.onGameLaunched.addListener((info) => {
 
 /* You can also fetch the supported features like this */
 let supportedFeatures = overwolf.games.getSupportedFeatures(OverwolfGameWithEventSupport.Overwatch);
+
+/* And if the plugin should be outdated on what features are available, you can always use this */
+
+overwolf.games.getSupportedFeaturesOnline(OverwolfGameWithEventSupport.APEX, features => {
+    console.log(features);
+});
 ```
