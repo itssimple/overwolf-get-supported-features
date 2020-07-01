@@ -16,14 +16,5 @@
   "private": false,
   "files": [
     "index.js"
-  ],
-  "scripts": {
-    "watch": "tsc -w"
-  },
-  "devDependencies": {
-    "@overwolf/types": "^2.15.1",
-    "@types/node-fetch": "^2.5.7",
-    "node-fetch": "^2.6.0",
-    "typescript": "^3.9.5"
-  }
+  ]
 }
