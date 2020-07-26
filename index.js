@@ -17,6 +17,7 @@ const OverwolfGameWithEventSupport = {
     HeroesOfTheStorm: 10624,
     LeagueOfLegends: 5426,
     LegendsOfRuneterra: 21620,
+    Minecraft: 8032,
     MTGArena: 21308,
     Overwatch: 10844,
     PUBG: 10906,
@@ -215,6 +216,11 @@ const OverwolfGameSupportedEvents = {
     ],
     LegendsOfRuneterra: [
         'game_client_data'
+    ],
+    Minecraft: [
+        'gep_internal',
+        'game_info',
+        'match_info'
     ],
     MTGArena: [
         /**
