@@ -8,10 +8,12 @@ if (typeof exports !== 'undefined') {
  */
 const OverwolfGameWithEventSupport = {
     APEX: 21566,
+    CallOfDutyWarzone: 21626,
     CSGO: 7764,
     DOTA2: 7314,
     DOTAUnderlords: 21586,
     EscapeFromTarkov: 21634,
+    FinalFantasyXIV: 6350,
     Fortnite: 21216,
     Hearthstone: 9898,
     HeroesOfTheStorm: 10624,
@@ -29,6 +31,7 @@ const OverwolfGameWithEventSupport = {
     StarCraft2: 5855,
     TeamfightTactics: 5426,
     Valorant: 21640,
+    Warframe: 8954,
     WorldOfTanks: 6365,
     WorldOfWarcraft: 765,
     WorldOfWarships: 10746
@@ -57,6 +60,13 @@ const OverwolfGameSupportedEvents = {
         'roster',
         'rank',
         'kill_feed'
+    ],
+    CallOfDutyWarzone: [
+      'gep_internal',
+      'match_info',
+      'game_info',
+      'kill',
+      'death'
     ],
     CSGO: [
         /**
@@ -146,6 +156,9 @@ const OverwolfGameSupportedEvents = {
         'gep_internal',
         'match_info',
         'game_info'
+    ],
+    FinalFantasyXIV: [
+      'match_info'
     ],
     Fortnite: [
         /**
@@ -357,6 +370,11 @@ const OverwolfGameSupportedEvents = {
         'match_info',
         'kill',
         'death'
+    ],
+    Warframe: [
+      'gep_internal',
+      'game_info',
+      'match_info'
     ],
     WorldOfTanks: [
         /**

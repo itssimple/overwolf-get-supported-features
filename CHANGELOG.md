@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.8.0
+
+- feat: Added support for Call of Duty: Warzone, Final Fantasy XIV and Warframe
+
 ## 1.7.0
 
 - feat: Added support for Minecraft
