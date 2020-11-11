@@ -158,7 +158,9 @@ const OverwolfGameSupportedEvents = {
         'game_info'
     ],
     FinalFantasyXIV: [
-      'match_info'
+      'gep_internal',
+      'match_info',
+      'game_info'
     ],
     Fortnite: [
         /**

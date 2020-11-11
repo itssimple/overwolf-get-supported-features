@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.8.1
+
+- fix: Added more supported features for FFXIV
+
 ## 1.8.0
 
 - feat: Added support for Call of Duty: Warzone, Final Fantasy XIV and Warframe
