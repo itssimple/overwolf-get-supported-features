@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.8.2
+
+- feat: Added more supported features for CoD: Warzone (assist, roster)
+
 ## 1.8.1
 
 - fix: Added more supported features for FFXIV

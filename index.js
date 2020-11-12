@@ -62,11 +62,13 @@ const OverwolfGameSupportedEvents = {
         'kill_feed'
     ],
     CallOfDutyWarzone: [
-      'gep_internal',
-      'match_info',
-      'game_info',
-      'kill',
-      'death'
+        'gep_internal',
+        'match_info',
+        'game_info',
+        'kill',
+        'death',
+        'assist',
+        'roster'
     ],
     CSGO: [
         /**
@@ -158,9 +160,7 @@ const OverwolfGameSupportedEvents = {
         'game_info'
     ],
     FinalFantasyXIV: [
-      'gep_internal',
-      'match_info',
-      'game_info'
+        'match_info'
     ],
     Fortnite: [
         /**
@@ -246,11 +246,11 @@ const OverwolfGameSupportedEvents = {
         'match_info'
     ],
     Overwatch: [
-      'gep_internal',
-      'game_info',
-      'match_info',
-      'kill',
-      'death'
+        'gep_internal',
+        'game_info',
+        'match_info',
+        'kill',
+        'death'
     ],
     PUBG: [
         /**
@@ -374,9 +374,9 @@ const OverwolfGameSupportedEvents = {
         'death'
     ],
     Warframe: [
-      'gep_internal',
-      'game_info',
-      'match_info'
+        'gep_internal',
+        'game_info',
+        'match_info'
     ],
     WorldOfTanks: [
         /**
