@@ -457,6 +457,9 @@ if (typeof overwolf !== "undefined" && typeof overwolf.games !== "undefined") {
 if (typeof exports !== 'undefined') {
     exports.getSupportedFeatures = getSupportedFeatures;
     exports.getSupportedFeaturesOnline = getSupportedFeaturesOnline;
+
+    exports.OverwolfGameWithEventSupport = OverwolfGameWithEventSupport;
+    exports.OverwolfGameSupportedEvents = OverwolfGameSupportedEvents;
 }
 
 
