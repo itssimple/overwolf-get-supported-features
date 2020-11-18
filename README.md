@@ -1,6 +1,8 @@
 # Overwolf - Get supported features
 
-This module lets you fetch the supported features that you can register for each game (that supports it)
+This module lets you fetch the supported features that you can register for each game (that supports it).
+
+This works best from within a Overwolf application, if you want to register actual features/events from games you play, it can't fetch events from i.e. the web.
 
 ## How to use (in Overwolf applications)
 
@@ -43,3 +45,13 @@ let supportedFeatures = getSupportedFeatures(
 
 console.log(supportedFeatures);
 ```
+
+## For more information about Overwolf and their applications
+
+**Developers** - Join their [Official Developer Discord](https://discord.gg/overwolf-developers)
+
+**End users** - Join their [Official Discord](https://discord.gg/overwolf)
+
+**Anyone with questions about this module**
+
+Feel free to join [my Discord](https://discord.gg/6fP8vWW)
