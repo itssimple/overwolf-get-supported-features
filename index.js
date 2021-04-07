@@ -30,6 +30,7 @@ const OverwolfGameWithEventSupport = {
     Splitgate: 21404,
     StarCraft2: 5855,
     TeamfightTactics: 5426,
+    Valheim: 21668,
     Valorant: 21640,
     Warframe: 8954,
     WorldOfTanks: 6365,
@@ -361,6 +362,10 @@ const OverwolfGameSupportedEvents = {
         'board',
         'bench',
         'carousel'
+    ],
+    Valheim: [
+      'gep_internal',
+      'game_info'
     ],
     Valorant: [
         /**
